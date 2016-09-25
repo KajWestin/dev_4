@@ -44,12 +44,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dev_4.Core">
-      <HintPath>..\dev_4.Core\bin\Debug\dev_4.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="dev_4.Domain">
-      <HintPath>..\dev_4.Domain\bin\Debug\dev_4.Domain.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -251,6 +245,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dev_4.Core\dev_4.Core.csproj">
+      <Project>{287ebbff-ae07-4d43-8e71-215ff79ce329}</Project>
+      <Name>dev_4.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dev_4.Domain\dev_4.Domain.csproj">
+      <Project>{3f9b8489-2130-4b3e-985e-397d5c8e141e}</Project>
+      <Name>dev_4.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dev_4.Core">
-      <HintPath>..\dev_4.Core\bin\Debug\dev_4.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +42,12 @@
   <ItemGroup>
     <Compile Include="Logic\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dev_4.Core\dev_4.Core.csproj">
+      <Project>{287ebbff-ae07-4d43-8e71-215ff79ce329}</Project>
+      <Name>dev_4.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
